@@ -46,6 +46,12 @@ export default function Edit({attributes, setAttributes}) {
                 value={attributes.newsPaperName}
                 onChange={(val) => setAttributes({newsPaperName: val})}
             />
+
+            <TextControl
+                label={"Data dell'articolo"}
+                value={attributes.date}
+                onChange={(val) => setAttributes({date: val})}
+            />
         </div>
     );
 }

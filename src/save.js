@@ -15,9 +15,21 @@ import {useBlockProps} from '@wordpress/block-editor';
  *
  * @param {Object} props            Properties passed to the function.
  * @param {Object} props.attributes Available block attributes.
- * @return {WPElement} Element to render.
+ * @return {JSX.Element} Element to render.
  */
 export default function save({attributes}) {
     const blockProps = useBlockProps.save();
-    return <div {...blockProps}><p>{attributes.newsPaperName}</p><a href={attributes.url}>{attributes.title}</a></div>;
+    return <div {...blockProps}>
+        <div className='columns-container'>
+            <div className='column color-box-container left-color-box-container'>
+            </div>
+            <div className='column article-data-container'>
+                <div className='newspaper-name'><a>{attributes.newsPaperName}</a></div>
+                <div className='newspaper-title'><h1><a href={attributes.url}>{attributes.title}</a></h1></div>
+                <div className='newspaper-date'><p>{attributes.date}</p></div>
+            </div>
+            <div className='column color-box-container right-color-box-container'>
+            </div>
+        </div>
+    </div>;
 }
