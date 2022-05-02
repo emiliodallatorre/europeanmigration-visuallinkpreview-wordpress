@@ -1,0 +1,34 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "create-block/europeanmigration-visuallinkpreview-wordpress",
+  "version": "0.1.0",
+  "title": "Visual link preview",
+  "category": "text",
+  "icon": "flag",
+  "description": "Blocco per mostrare preview dei link del centro studi nei media.",
+  "attributes": {
+    "title": {
+      "type": "string",
+      "source": "text",
+      "selector": "div"
+    },
+    "url": {
+      "type": "string",
+      "source": "text",
+      "selector": "div"
+    },
+    "newsPaperName": {
+      "type": "string",
+      "source": "text",
+      "selector": "div"
+    }
+  },
+  "supports": {
+    "html": false
+  },
+  "textdomain": "europeanmigration-visuallinkpreview-wordpress",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}
