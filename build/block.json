@@ -11,26 +11,27 @@
     "title": {
       "type": "string",
       "source": "text",
-      "selector": "div"
+      "selector": ".newspaper-title h1 a"
     },
     "url": {
       "type": "string",
-      "source": "text",
-      "selector": "div"
+      "source": "attribute",
+      "selector": ".newspaper-title h1 a",
+      "attribute": "href"
     },
     "newsPaperName": {
       "type": "string",
       "source": "text",
-      "selector": "div"
+      "selector": ".newspaper-name a"
     },
     "date": {
       "type": "string",
       "source": "text",
-      "selector": "div"
+      "selector": ".newspaper-date p"
     }
   },
   "supports": {
-    "html": false
+    "html": true
   },
   "textdomain": "europeanmigration-visuallinkpreview-wordpress",
   "editorScript": "file:./index.js",

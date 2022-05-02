@@ -51,17 +51,8 @@
   box-sizing: border-box;
 }
 
-.right-color-box-container {
-  display: none;
-  margin-left: 2%;
-}
-
-.left-color-box-container {
-  margin-right: 2%;
-}
-
 .color-box-container {
-  flex: 0 23%;
+  flex: 0 25%;
   background-color: #126782;
   transition: .3s;
 }
@@ -73,10 +64,7 @@
 
 .article-data-container {
   flex: 0 75%;
-}
-
-.article-data-container .title {
-
+  padding: 16px;
 }
 
 .newspaper-date p {
@@ -95,4 +83,9 @@
 
 .wp-block-create-block-europeanmigration-visuallinkpreview-wordpress:nth-of-type(even) .right-color-box-container {
   display: none;
+}
+
+.wp-block-create-block-europeanmigration-visuallinkpreview-wordpress {
+  margin-bottom: 16px;
+  background-color: var(--accent-color-extralight);
 }

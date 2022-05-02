@@ -3,7 +3,7 @@
  *
  * @see https://developer.wordpress.org/block-editor/developers/block-api/#registering-a-block
  */
-import { registerBlockType } from '@wordpress/blocks';
+import {registerBlockType} from '@wordpress/blocks';
 
 /**
  * Lets webpack process CSS, SASS or SCSS files referenced in JavaScript files.
@@ -28,25 +28,26 @@ import save from './save';
  * @see https://developer.wordpress.org/block-editor/developers/block-api/#registering-a-block
  */
 registerBlockType(
-	'create-block/europeanmigration-visuallinkpreview-wordpress',
-	{
-		/**
-		 * Used to construct a preview for the block to be shown in the block inserter.
-		 */
-		example: {
-			attributes: {
-				title: 'Giovane talento dell\'informatica sviluppa questo sito',
-				newsPaperName: 'Il Sole 24 Ore',
-				url: 'https://emiliodallatorre.it'
-			},
-		},
-		/**
-		 * @see ./edit.js
-		 */
-		edit: Edit,
-		/**
-		 * @see ./save.js
-		 */
-		save,
-	}
+    'create-block/europeanmigration-visuallinkpreview-wordpress',
+    {
+        /**
+         * Used to construct a preview for the block to be shown in the block inserter.
+         */
+        example: {
+            attributes: {
+                title: 'Giovane talento dell\'informatica sviluppa questo sito',
+                newsPaperName: 'Il Sole 24 Ore',
+                url: 'https://emiliodallatorre.it',
+                date: "January 12, 2001"
+            },
+        },
+        /**
+         * @see ./edit.js
+         */
+        edit: Edit,
+        /**
+         * @see ./save.js
+         */
+        save,
+    }
 );
