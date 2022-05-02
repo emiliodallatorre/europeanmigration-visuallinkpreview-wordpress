@@ -39,7 +39,7 @@
 }
 
 .newspaper-name {
-  margin-top: 8px;
+  margin-top: 3px;
 }
 
 .columns-container {
@@ -79,14 +79,20 @@
 
 }
 
-.newspaper-title h1 a {
-  text-decoration: none;
-}
-
-.newspaper-title h1 a:hover {
-  text-decoration: underline;
-}
-
 .newspaper-date p {
   color: dimgrey;
+  margin-bottom: 0 !important;
+}
+
+.newspaper-title h1 {
+  margin-top: 16px !important;
+  margin-bottom: 16px !important;
+}
+
+.wp-block-create-block-europeanmigration-visuallinkpreview-wordpress:nth-of-type(odd) .left-color-box-container {
+  display: none;
+}
+
+.wp-block-create-block-europeanmigration-visuallinkpreview-wordpress:nth-of-type(even) .right-color-box-container {
+  display: none;
 }
