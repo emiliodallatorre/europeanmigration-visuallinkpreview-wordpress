@@ -89,3 +89,7 @@
   margin-bottom: 16px;
   background-color: var(--accent-color-extralight);
 }
+
+.wp-block-create-block-europeanmigration-visuallinkpreview-wordpress:nth-of-type(odd) .newspaper-name, .wp-block-create-block-europeanmigration-visuallinkpreview-wordpress:nth-of-type(odd) .newspaper-title, .wp-block-create-block-europeanmigration-visuallinkpreview-wordpress:nth-of-type(odd) .newspaper-date {
+  text-align: right;
+}
