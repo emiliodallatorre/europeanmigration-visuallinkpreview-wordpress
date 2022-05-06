@@ -25,7 +25,7 @@ export default function save({attributes}) {
             </a>
             <div className='column article-data-container'>
                 <div className='newspaper-name'><a>{attributes.newsPaperName}</a></div>
-                <div className='newspaper-title'><h1><a href={attributes.url}>{attributes.title}</a></h1></div>
+                <div className='newspaper-title'><h3><a href={attributes.url}>{attributes.title}</a></h3></div>
                 <div className='newspaper-date'><p>{attributes.date}</p></div>
             </div>
             <a className='column color-box-container right-color-box-container' href={attributes.url}>

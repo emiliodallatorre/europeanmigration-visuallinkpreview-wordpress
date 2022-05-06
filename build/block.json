@@ -11,12 +11,12 @@
     "title": {
       "type": "string",
       "source": "text",
-      "selector": ".newspaper-title h1 a"
+      "selector": ".newspaper-title a"
     },
     "url": {
       "type": "string",
       "source": "attribute",
-      "selector": ".newspaper-title h1 a",
+      "selector": ".newspaper-title a",
       "attribute": "href"
     },
     "newsPaperName": {
