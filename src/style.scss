@@ -30,6 +30,7 @@
   --primary-color: #126782;
   --primary-color-dark: #023047;
   --primary-color-light: #219EBC;
+  --primary-color-extralight: #8ECAE633;
 }
 
 .wp-block-create-block-europeanmigration-visuallinkpreview-wordpress .newspaper-name a {
@@ -88,6 +89,7 @@
 
 .wp-block-create-block-europeanmigration-visuallinkpreview-wordpress {
   margin-bottom: 16px;
+  background-color: var(--primary-color-extralight);
 }
 
 .wp-block-create-block-europeanmigration-visuallinkpreview-wordpress:nth-of-type(odd) .newspaper-name, .wp-block-create-block-europeanmigration-visuallinkpreview-wordpress:nth-of-type(odd) .newspaper-title, .wp-block-create-block-europeanmigration-visuallinkpreview-wordpress:nth-of-type(odd) .newspaper-date {
