@@ -21,15 +21,15 @@ export default function save({attributes}) {
     const blockProps = useBlockProps.save();
     return <div {...blockProps}>
         <div className='columns-container'>
-            <div className='column color-box-container left-color-box-container'>
-            </div>
+            <a className='column color-box-container left-color-box-container' href={attributes.url}>
+            </a>
             <div className='column article-data-container'>
                 <div className='newspaper-name'><a>{attributes.newsPaperName}</a></div>
                 <div className='newspaper-title'><h1><a href={attributes.url}>{attributes.title}</a></h1></div>
                 <div className='newspaper-date'><p>{attributes.date}</p></div>
             </div>
-            <div className='column color-box-container right-color-box-container'>
-            </div>
+            <a className='column color-box-container right-color-box-container' href={attributes.url}>
+            </a>
         </div>
     </div>;
 }
